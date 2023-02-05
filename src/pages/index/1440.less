@@ -1,0 +1,131 @@
+.title-module {
+  position: relative;
+  padding: 0 24px;
+  box-sizing: border-box;
+  height: 88px;
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left 24px center;
+  margin-bottom: 20px;
+  &::before {
+    width: 10px;
+    height: 10px;
+  }
+}
+.info-container {
+  padding-top: 45px;
+  margin-bottom: 100px;
+  .info-wrapper {
+    .left-layout {
+      .desc {
+        font-size: 14px;
+        line-height: 2;
+      }
+    }
+    .right-layout {
+      .info-list {
+        .info-item {
+          margin: 0 5px 10px;
+          width: calc(100% / 3 - 10px);
+          height: 140px;
+          .box {
+            .icon {
+              img {
+                width: 38px;
+              }
+            }
+            .title {
+              font-size: 14px;
+            }
+          }
+          &.on {
+            .hover {
+              .title {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.news-container {
+  margin-bottom: 80px;
+  .news-wrapper {
+    display: flex;
+    .left-video {
+      width: 50%;
+      height: 450px;
+    }
+    .right-news {
+      padding-left: 20px;
+      width: 50%;
+      .title-module {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+.case-container {
+  .case-wrapper {
+    .title-module {
+      color: #fff;
+      margin-bottom: 122px;
+    }
+    .case-list {
+      .case-item {
+          height: auto;
+        .icon {
+          width: calc(100% - 116px);
+          height: auto;
+        }
+        .text {
+          .desc {
+            padding: 0 20px;
+            box-sizing: border-box;
+          }
+        }
+      }
+    }
+  }
+}
+.team-container{
+  .team-wrapper{
+    .team-list{
+      .team-item{
+        margin: 0 10px 20px;
+        width: calc(100% / 2 - 10px);
+        .photo{
+          width: 240px;
+          padding-top: 240px;
+          position: relative;
+          .title{
+            height: 50px;
+            font-size: 20px;
+          }
+        }
+        .text{
+          padding: 30px;
+          .title{
+            font-size: 22px;
+            margin-bottom: 10px;
+          }
+          .desc{
+            line-height: 1.8;
+          }
+        }
+        &:nth-child(2n + 1){
+          margin-left: 0;
+        }
+        &:nth-child(2n + 2){
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

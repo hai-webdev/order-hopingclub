@@ -1,0 +1,229 @@
+.title-module {
+  padding: 0 24px;
+  height: 68px;
+  font-size: 24px;
+  background-position: left 24px center;
+  margin: 0 auto 30px;
+  &::before {
+    width: 10px;
+    height: 10px;
+  }
+  width: 70%;
+  &::before {
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+  }
+}
+.banner-container {
+  height: 350px;
+  margin-bottom: 780px;
+  .title-module {
+    top: 110px;
+    color: #fff;
+  }
+  .case-list {
+    display: flex;
+    position: relative;
+    top: 150px;
+    bottom: auto;
+    left: auto;
+    transform: translate(0, 0);
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    .case-item {
+      margin: 0 auto 80px;
+      width: 85%;
+      margin-bottom: 80px;
+      height: auto;
+      &:nth-child(2n + 1){
+        margin-left: none;
+      }
+      &:nth-child(2n + 2){
+        margin-right: none;
+      }
+      .icon {
+        width: 100px;
+        height: auto;
+      }
+      .text {
+        top: -30px;
+        .title {
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+        .desc {
+          font-size: 12px;
+          line-height: 1.5;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}
+.real-estate-container {
+  padding-bottom: 30px;
+  .real-estate-wrapper {
+    width: 100%;
+    .real-estate-item {
+      height: auto;
+      .left-layout {
+        width: 100%;
+        height: auto;
+        img{
+          position: relative;
+          object-fit: contain;
+          bottom: 0;
+          &.m-img{
+            display: block;
+            width: 100%;
+          }
+          &.pc-img{
+            display: none;
+          }
+        }
+      }
+      .right-layout {
+        width: 100%;
+        padding:30px 15px;
+        .text {
+          .title {
+            margin-bottom: 15px;
+            font-size: 24px;
+          }
+          .desc {
+            font-size: 12px;
+            line-height: 1.6;
+          }
+        }
+      }
+    }
+  }
+}
+.gold-assets-container {
+  padding-top: 30px;
+  background-size:100% 350px;
+  margin-bottom: 30px;
+  .text {
+    .title-module {
+      margin-bottom: 30px;
+    }
+    .assets-wrapper{
+      flex-direction: column-reverse;
+      .left-layout{
+        width: 100%;
+        .info-list{
+          display: flex;
+          margin-bottom: 20px;
+          .info-item{
+            width: 50%;
+            .text{
+              font-size: 12px;
+              line-height: 1.4;
+              padding: 25px 15px;
+              height: auto;
+            }
+            &:nth-child(1){
+              .text{
+                background-color: #8DB4BC;
+                order:1;
+                text-align: right;
+              }
+              .img{
+                order: 1;
+              }
+            }
+            &:nth-child(2){
+              .text{
+                order:1;
+                background-color: #BCAB8D;
+              }
+              .img{
+                order: 2;
+              }
+            }
+          }
+        }
+      }
+      .right-layout{
+        margin-bottom: 30px;
+        width: 100%;
+        padding-left: 0;
+        .title{
+          font-size: 24px;
+          color:#fff;
+          margin-bottom: 10px;
+          text-align: center;
+        }
+        .desc{
+          font-size: 14px;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}
+.share-container {
+  padding-top: 30px;
+  padding-bottom: 0;
+  .share-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    .share-item {
+      margin-right: 0;
+      width: 50%;
+      margin-bottom: 0;
+      .text {
+        .title {
+          font-size: 20px;
+          color: #fff;
+          margin-bottom: 10px;
+        }
+        .desc {
+          font-size: 12px;
+          color: #fff;
+          line-height: 1.5;
+          opacity: 0.5;
+          padding: 0 3px;
+        }
+      }
+      &:nth-child(3n + 3) {
+        margin-right: 0;
+      }
+      &:nth-child(2n + 2) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+.swiper-button-next, .swiper-button-prev{
+  display: none;
+}
+.auction-container{
+  .auction-wrapper{
+    & > .title{
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .auction-list{
+      .auction-item{
+        margin-right: 0;
+        width: calc((100% - 10px) / 2);
+        &:nth-child(2n + 1){
+          margin-right: 10px;
+        }
+        .text{
+          font-size: 12px;
+          line-height: 1.6;
+          color:@gray;
+          padding: 15px;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}

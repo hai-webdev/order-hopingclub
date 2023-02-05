@@ -1,0 +1,222 @@
+.title-module {
+  padding: 0 24px;
+  height: 68px;
+  font-size: 24px;
+  background-position: left 24px center;
+  margin-bottom: 20px;
+  &::before {
+    width: 8px;
+    height: 8px;
+  }
+}
+.banner-container {
+  height: auto;
+  padding-bottom: 650px;
+  .title-module {
+    top: 150px;
+    position: relative;
+    color: #fff;
+  }
+  .infos-container {
+    padding-bottom: 20px;
+    height: auto;
+    .info-wrapper {
+      flex-wrap: wrap;
+      .left-text {
+        width: 100%;
+        font-size: 12px;
+        line-height: 2;
+        padding: 20px 10px;
+        box-sizing: border-box;
+        color: #fff;
+        text-indent: 2em;
+      }
+      .right-list {
+        width: 100%;
+        .info-list {
+          display: flex;
+          flex-wrap: wrap;
+          .info-item {
+            height: 80px;
+            margin: 0 3px 6px;
+            width: calc(100% / 3 - 6px);
+          }
+        }
+      }
+    }
+  }
+  .banner-bg {
+    top: 30%;
+  }
+}
+.investor-container {
+  padding: 30px 0;
+  .investor-wrapper {
+    .left-layout {
+      .logo {
+        width: 100%;
+      }
+    }
+    .right-layout {
+      .num-list {
+        .num-item {
+          margin-right: 20px;
+          .num {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+            img {
+              height: 24px;
+            }
+          }
+          .title {
+            font-size: 14px;
+          }
+        }
+      }
+      .right-title {
+        font-size: 18px;
+        color: #434554;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .desc {
+        color: @gray;
+        font-size: 12px;
+        line-height: 1.8;
+        max-width: 100%;
+      }
+    }
+  }
+}
+.structure-container {
+  padding-bottom: 60px;
+  background-size: auto 47%;
+  .structure-wrapper {
+    width: 100%;
+    .title-module{
+      width: 80%;
+      margin: 0 auto;
+    }
+    .main-cont {
+      text-align: center;
+      .title {
+        width: 220px;
+        padding: 0 20px;
+        height: 44px;
+        // line-height: 44px;
+        // display: inline-block;
+        border-radius: 6px;
+        font-size: 16px;
+        margin-bottom: 10px;
+        &::after {
+          height: 10px;
+          bottom: -10px;
+        }
+      }
+      .team-list {
+        padding: 10px 0;
+        .team-item {
+          &::after {
+            top: -10px;
+            height: 10px;
+          }
+          img {
+            display: block;
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 10px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+        &.num-2 {
+          .team-item {
+            width: 50%;
+            img {
+              width: 90px;
+              height: 90px;
+            }
+            &::after {
+              top: calc(50% - 10px);
+            }
+          }
+        }
+        &.num-6 {
+          flex-wrap: wrap;
+          &::before{
+            width: 35%;
+          }
+          .team-item {
+            width: 35%;
+            margin-bottom: 15px;
+            &::after{
+              top: -50px;
+              height: 50px;
+              z-index: -1;
+            }
+            img {
+              width: 70px;
+              height: 70px;
+            }
+            p {
+              display: none;
+            }
+            &:nth-child(2n + 1) {
+              a {
+                display: flex;
+                flex-direction: column;
+                align-content: flex-end;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.achievement-container {
+  padding-bottom: 80px;
+  .achievement-wrapper {
+    .title-module {
+      padding: 0 24px;
+      height: 68px;
+      font-size: 24px;
+      background-position: left 24px center;
+      margin: 0 auto 30px;
+      &::before {
+        width: 10px;
+        height: 10px;
+      }
+      width: 70%;
+      &::before {
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .achievement-list {
+      display: flex;
+      flex-wrap: wrap;
+      .achievement-item {
+        width: calc((100% - 3px * 2) / 2);
+        margin-right: 6px;
+        padding: 15px;
+        height: auto;
+        &:nth-child(2n + 2){
+          margin-right: 0;
+        }
+        a {
+          .title {
+            font-size: 24px;
+            margin-bottom: 10px;
+          }
+          .desc {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

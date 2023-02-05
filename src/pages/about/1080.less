@@ -1,0 +1,98 @@
+.banner-container {
+  .infos-container {
+    .info-wrapper {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .left-text {
+        font-size: 12px;
+        line-height: 1.8;
+        padding: 0 20px;
+      }
+    }
+  }
+}
+.investor-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .investor-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    .left-layout,
+    .right-layout {
+      width: 100%;
+    }
+    .left-layout {
+      margin-bottom: 30px;
+      .logo {
+        margin-left: 0;
+        width: 70%;
+        box-shadow: 0 20px 20px rgba(8, 122, 243, 0.06);
+      }
+    }
+  }
+}
+.structure-container {
+  .structure-wrapper {
+    .title-module {
+      color: #fff;
+      margin-bottom: 36px;
+    }
+    .main-cont {
+      .title {
+        width: 280px;
+        height: 60px;
+        font-size: 20px;
+      }
+      .team-list {
+        .team-item {
+          img {
+            display: block;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 15px;
+          }
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+.achievement-container {
+  padding-bottom: 50px;
+  .achievement-wrapper {
+    .achievement-list {
+ 
+      .achievement-item {
+        width: calc((100% - 6px * 3) / 4);
+        margin-right: 6px;
+        border-radius: 12px;
+        padding: 15px 15px 15px 20px;
+        box-sizing: border-box;
+        background-color: #fff;
+        margin-bottom: 6px;
+
+        a {
+          .title {
+            font-size: 20px;
+            margin-bottom: 5px;
+            &::after {
+              width: 5px;
+              height: 5px;
+              left: -10px;
+            }
+          }
+          .desc {
+            font-weight: bold;
+            font-size: 14px;
+            color: @gray;
+          }
+        }
+      }
+    }
+  }
+}

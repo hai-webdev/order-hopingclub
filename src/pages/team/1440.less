@@ -1,0 +1,59 @@
+.structure-container {
+  .structure-wrapper {
+    .main-cont {
+      .title {
+        width: 300px;
+        height: 60px;
+        font-size: 20px;
+      }
+      .team-list {
+        .team-item {
+          img {
+            display: block;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px;
+          }
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.team-leader-container {
+  padding: 40px 0;
+  .team-leader-item {
+    height: 350px;
+    .text {
+      flex: 1;
+      color: @gray;
+      padding: 0 5%;
+      box-sizing: border-box;
+      .title {
+        font-size: 28px;
+        margin-bottom: 15px;
+      }
+      .note {
+        font-size: 13px;
+        line-height: 1.8;
+      }
+    }
+  }
+}
+.swiper-button-next {
+  right: -15px;
+  transform: translateX(100%);
+}
+.swiper-button-prev {
+  left: -15px;
+  transform: translateX(-100%);
+}
+.swiper-button-next,
+.swiper-button-prev {
+  &::after {
+    font-size: 28px;
+  }
+}

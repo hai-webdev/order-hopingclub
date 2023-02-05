@@ -1,0 +1,24 @@
+header {
+  .head {
+    .logo {
+      font-size: 18px;
+      a {
+        img {
+          height: 38px;
+          margin-right: 8px;
+        }
+      }
+    }
+    .nav-list {
+      .nav-item {
+        padding: 0 20px;
+        &.on,
+        &:hover {
+          &::before {
+            width: calc(100% - 40px);
+          }
+        }
+      }
+    }
+  }
+}
